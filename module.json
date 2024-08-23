@@ -1,0 +1,170 @@
+{
+  "id": "pf2e-soldiers-of-the-immortal-war",
+  "title": "PF2e - Soldiers of the Immortal War",
+  "version": "#{VERSION}#",
+  "compatibility": {
+    "minimum": "11",
+    "verified": "12"
+  },
+  "relationships": {
+    "systems": [
+      {
+        "id": "pf2e",
+        "type": "system",
+        "compatibility": {}
+      }
+    ],
+    "recommends": [
+      {
+        "id": "firebrands",
+        "type": "module",
+        "compatibility": {}
+      },
+      {
+        "id": "clerics-remaster",
+        "type": "module",
+        "compatibility": {}
+      }
+    ]
+  },
+  "authors": [
+    {
+      "name": "Michael Hosp / OfflineEnigma",
+      "email": "enigmahomebrew@gmail.com",
+      "discord": "offlineenigma",
+      "flags": {}
+    }
+  ],
+  "packFolders": [
+    {
+      "name": "OfflineEnigma's Homebrew",
+      "sorting": "a",
+      "packs": [],
+      "folders": [
+        {
+          "name": "Soldiers of the Immortal War",
+          "sorting": "a",
+          "packs": [
+            "subclasses",
+            "class-archetypes",
+            "feats",
+            "abilities",
+            "spells",
+            "other",
+            "clerics",
+            "rules"
+          ],
+          "folders": [],
+          "color": null
+        }
+      ],
+      "color": null
+    }
+  ],
+  "url": "#{URL}#",
+  "description": "A foundry module containing everything from the Soldiers of the Immortal War supplement.",
+  "packs": [
+    {
+      "name": "feats",
+      "label": "Feats",
+      "path": "packs/feats",
+      "type": "Item",
+      "system": "pf2e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "other",
+      "label": "Other",
+      "path": "packs/other",
+      "type": "Item",
+      "system": "pf2e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "abilities",
+      "label": "Abilities",
+      "path": "packs/abilities",
+      "type": "Item",
+      "system": "pf2e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "subclasses",
+      "label": "Subclasses",
+      "path": "packs/subclasses",
+      "type": "Item",
+      "system": "pf2e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "class-archetypes",
+      "label": "Class Archetypes",
+      "path": "packs/class-archetypes",
+      "type": "Item",
+      "system": "pf2e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "spells",
+      "label": "Spells",
+      "path": "packs/spells",
+      "type": "Item",
+      "system": "pf2e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "clerics",
+      "label": "Clerics+",
+      "path": "packs/clerics",
+      "type": "Item",
+      "system": "pf2e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "rules",
+      "label": "Rules",
+      "path": "packs/rules",
+      "type": "JournalEntry",
+      "system": "pf2e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    }
+  ],
+  "flags": {
+    "pf2e-soldiers-of-the-immortal-war": {
+      "pf2e-homebrew": {
+        "featTraits": {
+          "consignment": "Consignment",
+          "inquisitor": "Inquisitor"
+        },
+		"spellTraits": {
+          "inquisitor": "Inquisitor",
+		  "justice": "Justice"
+		}
+      }
+    }
+  }
+}
