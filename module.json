@@ -24,6 +24,11 @@
         "id": "clerics-remaster",
         "type": "module",
         "compatibility": {}
+      },
+      {
+        "id": "pf2e-animal-companions",
+        "type": "module",
+        "compatibility": {}
       }
     ]
   },
@@ -160,10 +165,10 @@
           "consignment": "Consignment",
           "inquisitor": "Inquisitor"
         },
-		"spellTraits": {
+        "spellTraits": {
           "inquisitor": "Inquisitor",
-		  "justice": "Justice"
-		}
+          "justice": "Justice"
+        }
       }
     }
   }
