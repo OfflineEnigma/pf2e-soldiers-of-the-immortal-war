@@ -67,6 +67,8 @@
     }
   ],
   "url": "#{URL}#",
+  "manifest": "#{MANIFEST}#",
+  "download": "#{DOWNLOAD}#",
   "description": "A foundry module containing everything from the Soldiers of the Immortal War supplement.",
   "packs": [
     {
