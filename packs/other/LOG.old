@@ -1,3 +1,7 @@
-2024/08/22-19:19:43.611 6b9c Recovering log #111
-2024/08/22-19:19:43.622 6b9c Delete type=0 #111
-2024/08/22-19:19:43.623 6b9c Delete type=3 #109
+2024/08/24-21:23:31.579 3e64 Recovering log #125
+2024/08/24-21:23:31.591 3e64 Delete type=0 #125
+2024/08/24-21:23:31.591 3e64 Delete type=3 #123
+2024/08/24-21:39:46.004 5e0c Level-0 table #130: started
+2024/08/24-21:39:46.005 5e0c Level-0 table #130: 0 bytes OK
+2024/08/24-21:39:46.009 5e0c Delete type=0 #128
+2024/08/24-21:39:46.020 5e0c Manual compaction at level-0 from '!items!6B9BZc8bPjznFtq5' @ 72057594037927935 : 1 .. '!items!njqwByMe92BU1chK' @ 0 : 0; will stop at (end)
