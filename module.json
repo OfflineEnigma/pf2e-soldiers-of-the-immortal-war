@@ -1,177 +1,331 @@
 {
-  "id": "pf2e-soldiers-of-the-immortal-war",
-  "title": "PF2e - Soldiers of the Immortal War",
-  "version": "#{VERSION}#",
-  "compatibility": {
-    "minimum": "11",
-    "verified": "12"
-  },
-  "relationships": {
-    "systems": [
-      {
-        "id": "pf2e",
-        "type": "system",
-        "compatibility": {}
-      }
-    ],
-    "recommends": [
-      {
-        "id": "firebrands",
-        "type": "module",
-        "compatibility": {}
-      },
-      {
-        "id": "clerics-remaster",
-        "type": "module",
-        "compatibility": {}
-      },
-      {
-        "id": "pf2e-animal-companions",
-        "type": "module",
-        "compatibility": {}
-      }
-    ]
-  },
-  "authors": [
-    {
-      "name": "Michael Hosp / OfflineEnigma",
-      "email": "enigmahomebrew@gmail.com",
-      "discord": "offlineenigma",
-      "flags": {}
-    }
-  ],
-  "packFolders": [
-    {
-      "name": "OfflineEnigma's Homebrew",
-      "sorting": "a",
-      "packs": [],
-      "folders": [
-        {
-          "name": "Soldiers of the Immortal War",
-          "sorting": "a",
-          "packs": [
-            "subclasses",
-            "class-archetypes",
-            "feats",
-            "abilities",
-            "spells",
-            "other",
-            "clerics",
-            "rules"
-          ],
-          "folders": [],
-          "color": null
-        }
-      ],
-      "color": null
-    }
-  ],
-  "url": "#{URL}#",
-  "manifest": "#{MANIFEST}#",
-  "download": "#{DOWNLOAD}#",
-  "description": "A foundry module containing everything from the Soldiers of the Immortal War supplement.",
-  "packs": [
-    {
-      "name": "feats",
-      "label": "Feats",
-      "path": "packs/feats",
-      "type": "Item",
-      "system": "pf2e",
-      "ownership": {
-        "PLAYER": "OBSERVER",
-        "ASSISTANT": "OWNER"
-      }
-    },
-    {
-      "name": "other",
-      "label": "Other",
-      "path": "packs/other",
-      "type": "Item",
-      "system": "pf2e",
-      "ownership": {
-        "PLAYER": "OBSERVER",
-        "ASSISTANT": "OWNER"
-      }
-    },
-    {
-      "name": "abilities",
-      "label": "Abilities",
-      "path": "packs/abilities",
-      "type": "Item",
-      "system": "pf2e",
-      "ownership": {
-        "PLAYER": "OBSERVER",
-        "ASSISTANT": "OWNER"
-      }
-    },
-    {
-      "name": "subclasses",
-      "label": "Subclasses",
-      "path": "packs/subclasses",
-      "type": "Item",
-      "system": "pf2e",
-      "ownership": {
-        "PLAYER": "OBSERVER",
-        "ASSISTANT": "OWNER"
-      }
-    },
-    {
-      "name": "class-archetypes",
-      "label": "Class Archetypes",
-      "path": "packs/class-archetypes",
-      "type": "Item",
-      "system": "pf2e",
-      "ownership": {
-        "PLAYER": "OBSERVER",
-        "ASSISTANT": "OWNER"
-      }
-    },
-    {
-      "name": "spells",
-      "label": "Spells",
-      "path": "packs/spells",
-      "type": "Item",
-      "system": "pf2e",
-      "ownership": {
-        "PLAYER": "OBSERVER",
-        "ASSISTANT": "OWNER"
-      }
-    },
-    {
-      "name": "clerics",
-      "label": "Clerics+",
-      "path": "packs/clerics",
-      "type": "Item",
-      "system": "pf2e",
-      "ownership": {
-        "PLAYER": "OBSERVER",
-        "ASSISTANT": "OWNER"
-      }
-    },
-    {
-      "name": "rules",
-      "label": "Rules",
-      "path": "packs/rules",
-      "type": "JournalEntry",
-      "system": "pf2e",
-      "ownership": {
-        "PLAYER": "OBSERVER",
-        "ASSISTANT": "OWNER"
-      }
-    }
-  ],
-  "flags": {
-    "pf2e-soldiers-of-the-immortal-war": {
-      "pf2e-homebrew": {
-        "featTraits": {
-          "consignment": "Consignment",
-          "inquisitor": "Inquisitor"
-        },
-        "spellTraits": {
-          "inquisitor": "Inquisitor",
-          "justice": "Justice"
-        }
-      }
-    }
-  }
+	"id": "pf2e-soldiers-of-the-immortal-war",
+	"title": "PF2e - Soldiers of the Immortal War",
+	"version": "#{VERSION}#",
+	"compatibility": {
+		"minimum": "11",
+		"verified": "12"
+	},
+	"relationships": {
+		"systems": [
+			{
+				"id": "pf2e",
+				"type": "system",
+				"compatibility": {}
+			},
+			{
+				"id": "sf2e",
+				"type": "system",
+				"compatibility": {
+					"minimum": "1.0.3"
+				}
+			}
+		],
+		"recommends": [
+			{
+				"id": "pf2e-animal-companions",
+				"type": "module",
+				"compatibility": {}
+			}
+		],
+		"requires": [
+			{
+				"id": "pf2e-animal-companions",
+				"type": "module",
+				"compatibility": {}
+			}
+		]
+	},
+	"authors": [
+		{
+			"name": "Michael Hosp / OfflineEnigma",
+			"email": "enigmahomebrew@gmail.com",
+			"discord": "offlineenigma",
+			"url": "https://theteamplus.us/author/offlineenigma/",
+			"flags": {}
+		}
+	],
+	"packFolders": [
+		{
+			"name": "OfflineEnigma's Homebrew",
+			"sorting": "a",
+			"packs": [],
+			"folders": [
+				{
+					"name": "Soldiers of the Immortal War",
+					"sorting": "a",
+					"packs": [
+						"subclasses",
+						"class-archetypes",
+						"feats",
+						"abilities",
+						"spells",
+						"other",
+						"clerics",
+						"rules",
+						"sf2e-feats",
+						"sf2e-other",
+						"sf2e-abilities",
+						"sf2e-subclasses",
+						"sf2e-class-archetypes",
+						"sf2e-spells",
+						"sf2e-clerics",
+						"sf2e-rules"
+					],
+					"folders": [],
+					"color": null
+				}
+			],
+			"color": null
+		}
+	],
+	"url": "#{URL}#",
+	"manifest": "#{MANIFEST}#",
+	"download": "#{DOWNLOAD}#",
+	"description": "<p>A foundry module containing everything from the Soldiers of the Immortal War supplement.</p>",
+	"packs": [
+		{
+			"name": "feats",
+			"label": "Feats",
+			"banner": "modules/pf2e-soldiers-of-the-immortal-war/assets/banners/part3.png",
+			"path": "packs/feats",
+			"type": "Item",
+			"system": "pf2e",
+			"ownership": {
+				"PLAYER": "OBSERVER",
+				"ASSISTANT": "OWNER"
+			},
+			"flags": {}
+		},
+		{
+			"name": "other",
+			"label": "Other",
+			"banner": "modules/pf2e-soldiers-of-the-immortal-war/assets/banners/part4.png",
+			"path": "packs/other",
+			"type": "Item",
+			"system": "pf2e",
+			"ownership": {
+				"PLAYER": "OBSERVER",
+				"ASSISTANT": "OWNER"
+			},
+			"flags": {}
+		},
+		{
+			"name": "abilities",
+			"label": "Abilities",
+			"banner": "modules/pf2e-soldiers-of-the-immortal-war/assets/banners/part0.png",
+			"path": "packs/abilities",
+			"type": "Item",
+			"system": "pf2e",
+			"ownership": {
+				"PLAYER": "OBSERVER",
+				"ASSISTANT": "OWNER"
+			},
+			"flags": {}
+		},
+		{
+			"name": "subclasses",
+			"label": "Subclasses",
+			"banner": "modules/pf2e-soldiers-of-the-immortal-war/assets/banners/part7.png",
+			"path": "packs/subclasses",
+			"type": "Item",
+			"system": "pf2e",
+			"ownership": {
+				"PLAYER": "OBSERVER",
+				"ASSISTANT": "OWNER"
+			},
+			"flags": {}
+		},
+		{
+			"name": "class-archetypes",
+			"label": "Class Archetypes",
+			"banner": "modules/pf2e-soldiers-of-the-immortal-war/assets/banners/part1.png",
+			"path": "packs/class-archetypes",
+			"type": "Item",
+			"system": "pf2e",
+			"ownership": {
+				"PLAYER": "OBSERVER",
+				"ASSISTANT": "OWNER"
+			},
+			"flags": {}
+		},
+		{
+			"name": "spells",
+			"label": "Spells",
+			"banner": "modules/pf2e-soldiers-of-the-immortal-war/assets/banners/part6.png",
+			"path": "packs/spells",
+			"type": "Item",
+			"system": "pf2e",
+			"ownership": {
+				"PLAYER": "OBSERVER",
+				"ASSISTANT": "OWNER"
+			},
+			"flags": {}
+		},
+		{
+			"name": "clerics",
+			"label": "Clerics+",
+			"banner": "modules/pf2e-soldiers-of-the-immortal-war/assets/banners/part2.png",
+			"path": "packs/clerics",
+			"type": "Item",
+			"system": "pf2e",
+			"ownership": {
+				"PLAYER": "OBSERVER",
+				"ASSISTANT": "OWNER"
+			},
+			"flags": {}
+		},
+		{
+			"name": "rules",
+			"label": "Rules",
+			"banner": "modules/pf2e-soldiers-of-the-immortal-war/assets/banners/part5.png",
+			"path": "packs/rules",
+			"type": "JournalEntry",
+			"system": "pf2e",
+			"ownership": {
+				"PLAYER": "OBSERVER",
+				"ASSISTANT": "OWNER"
+			},
+			"flags": {}
+		},
+		{
+			"name": "sf2e-feats",
+			"label": "Feats",
+			"path": "packs/sf2e-feats",
+			"type": "Item",
+			"system": "sf2e",
+			"flags": {},
+			"banner": "modules/pf2e-soldiers-of-the-immortal-war/assets/banners/part3.png",
+			"ownership": {
+				"PLAYER": "OBSERVER",
+				"ASSISTANT": "OWNER"
+			}
+		},
+		{
+			"name": "sf2e-other",
+			"label": "Other",
+			"path": "packs/sf2e-other",
+			"type": "Item",
+			"system": "sf2e",
+			"flags": {},
+			"banner": "modules/pf2e-soldiers-of-the-immortal-war/assets/banners/part4.png",
+			"ownership": {
+				"PLAYER": "OBSERVER",
+				"ASSISTANT": "OWNER"
+			}
+		},
+		{
+			"name": "sf2e-abilities",
+			"label": "Abilities",
+			"path": "packs/sf2e-abilities",
+			"type": "Item",
+			"system": "sf2e",
+			"flags": {},
+			"banner": "modules/pf2e-soldiers-of-the-immortal-war/assets/banners/part0.png",
+			"ownership": {
+				"PLAYER": "OBSERVER",
+				"ASSISTANT": "OWNER"
+			}
+		},
+		{
+			"name": "sf2e-subclasses",
+			"label": "Subclasses",
+			"path": "packs/sf2e-subclasses",
+			"type": "Item",
+			"system": "sf2e",
+			"flags": {},
+			"banner": "modules/pf2e-soldiers-of-the-immortal-war/assets/banners/part7.png",
+			"ownership": {
+				"PLAYER": "OBSERVER",
+				"ASSISTANT": "OWNER"
+			}
+		},
+		{
+			"name": "sf2e-class-archetypes",
+			"label": "Class Archetypes",
+			"path": "packs/sf2e-class-archetypes",
+			"type": "Item",
+			"system": "sf2e",
+			"flags": {},
+			"banner": "modules/pf2e-soldiers-of-the-immortal-war/assets/banners/part1.png",
+			"ownership": {
+				"PLAYER": "OBSERVER",
+				"ASSISTANT": "OWNER"
+			}
+		},
+		{
+			"name": "sf2e-spells",
+			"label": "Spells",
+			"path": "packs/sf2e-spells",
+			"type": "Item",
+			"system": "sf2e",
+			"flags": {},
+			"banner": "modules/pf2e-soldiers-of-the-immortal-war/assets/banners/part6.png",
+			"ownership": {
+				"PLAYER": "OBSERVER",
+				"ASSISTANT": "OWNER"
+			}
+		},
+		{
+			"name": "sf2e-clerics",
+			"label": "Clerics+",
+			"path": "packs/sf2e-clerics",
+			"type": "Item",
+			"system": "sf2e",
+			"flags": {},
+			"banner": "modules/pf2e-soldiers-of-the-immortal-war/assets/banners/part2.png",
+			"ownership": {
+				"PLAYER": "OBSERVER",
+				"ASSISTANT": "OWNER"
+			}
+		},
+		{
+			"name": "sf2e-rules",
+			"label": "Rules",
+			"path": "packs/sf2e-rules",
+			"type": "JournalEntry",
+			"system": "sf2e",
+			"flags": {},
+			"banner": "modules/pf2e-soldiers-of-the-immortal-war/assets/banners/part5.png",
+			"ownership": {
+				"PLAYER": "OBSERVER",
+				"ASSISTANT": "OWNER"
+			}
+		}
+	],
+	"flags": {
+		"pf2e-soldiers-of-the-immortal-war": {
+			"pf2e-homebrew": {
+				"classTraits": {
+					"inquisitor": "Inquisitor"
+				},
+				"featTraits": {
+					"consigned": {
+						"label": "Consigned",
+						"description": "Consigned feats can typically be taken as class feats, though some are general or skill feats. If a consigned feat isn’t a general or skill feat, the feat gains the appropriate trait for the class of the character who selected it. Most consigned feats require you to already have at least one consignment feat. Some consigned feats however, such as Celestial Heart, act as a method of gaining your first consignment feat and can be taken as long as you have a patron that meets the prerequisites."
+					},
+					"consignment": {
+						"label": "Consignment",
+						"description": "Certain feats may align you with powers even more than normal for creatures, selling away your soul to these powers for greater gains. These feats have the consignment trait. You cannot retrain out of feats with the consignment trait short of divine intervention, often requiring you to beseech the powers you sold your soul to for mercy. Gaining consignment feats is not inherently bad, however; many heralds of benevolent deities have the benefits of several consignment feats. Consigning yourself simply means binding yourself to their service for all eternity, something that can be a great boon to many creatures."
+					},
+					"inquisitor": "Inquisitor",
+					"justice": {
+						"label": "Justice",
+						"description": "Actions and spells with the justice trait are blessed by your deity’s divine providence. Their usage functions as a trigger for your righteous acts."
+					},
+					"righteous": {
+						"label": "Righteous",
+						"description": "Actions with this trait allow you to follow up on your deity’s divine energy. An action with the righteous trait can be used only if your previous action had the justice trait, including Casting a Spell with the justice trait. You can only use one action with the righteous trait per round, and can only use actions with the righteous trait while within 30 feet of a target of your Judgment."
+					}
+				},
+				"spellTraits": {
+					"inquisitor": "Inquisitor",
+					"justice": {
+						"label": "Justice",
+						"description": "Actions and spells with the justice trait are blessed by your deity’s divine providence. Their usage functions as a trigger for your righteous acts."
+					}
+				}
+			}
+		}
+	}
 }
