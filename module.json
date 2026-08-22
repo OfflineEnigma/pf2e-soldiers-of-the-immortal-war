@@ -3,8 +3,8 @@
 	"title": "PF2e - Soldiers of the Immortal War",
 	"version": "#{VERSION}#",
 	"compatibility": {
-		"minimum": "11",
-		"verified": "12"
+		"minimum": "13",
+		"verified": "14"
 	},
 	"relationships": {
 		"systems": [
@@ -292,6 +292,9 @@
 				"ASSISTANT": "OWNER"
 			}
 		}
+	],
+	"esmodules": [
+		"scripts/sotiw.js"
 	],
 	"flags": {
 		"pf2e-soldiers-of-the-immortal-war": {
